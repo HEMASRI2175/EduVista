@@ -92,17 +92,16 @@ We aim to collaborate with companies and industry professionals to provide stude
 - Composer
 - Node.js & npm
 - MySQL
-  ###optional
-- Docker
-- Docker composer
-- Redis
+- Docker(optional)
+- Docker composer(optional)
+- Redis(optional)
 
 ### Installation
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-repo/eduvista.git
-   cd eduvista
+   git clone https://github.com/EduVista.git
+   cd EduVista
    ```
 
 2. **Install PHP dependencies:**
@@ -144,6 +143,7 @@ We aim to collaborate with companies and industry professionals to provide stude
 
 9. **Access the application:**
    Open your browser and go to `http://localhost:8000`
+   
 ### Optional: Using Docker
 
 1. **Install Docker and Docker Compose.**
