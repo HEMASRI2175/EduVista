@@ -72,14 +72,121 @@ EduVista is a comprehensive e-learning platform designed to bridge the digital d
 
 ## Team Contributions
 
-### Member 1: [Your Name]
+### Member 1: Chettim chetty Hemasri
 
 As the Backend Developer and Project Manager, I focused on designing and implementing RESTful APIs using Laravel, managing the MySQL database schema, and integrating secure user authentication with Laravel Passport. I also ensured seamless project execution by allocating tasks, conducting code reviews, and creating comprehensive documentation. Working with these technologies was a challenging yet rewarding experience, as it allowed me to enhance the application's performance and security while coordinating effectively with the team.
 
-### Member 2: [Teammate's Name]
+### Member 2: Vootukuru Jyotheesh
 
 As the Frontend Developer, Middleware Developer, and UI/UX Designer, I was responsible for designing a responsive and intuitive user interface using Vue.js, developing reusable components, and managing application state with Vuex. I also integrated Axios for efficient communication with the backend APIs and developed custom middleware to handle frontend request validation and user activity tracking. Diving into these technologies was both exciting and enriching, as it enabled me to create a dynamic, secure, and engaging platform that meets users' needs.
 
 ## What's Next for EduVista
 
 We aim to collaborate with companies and industry professionals to provide students with valuable insights and direct access to job opportunities. By enabling companies to post job listings and share industry trends, EduVista keeps students informed about the latest market requirements and career paths. The platform also offers mentorship programs and peer-to-peer learning opportunities, ensuring that students receive the guidance and support they need to succeed. In the future, we plan to incorporate downloadable content for offline use and establish partnerships with local community centers to ensure that even those with limited internet access can continue their education without interruption.
+
+## Setup Instructions
+
+### Prerequisites
+
+- PHP >= 7.3
+- Composer
+- Node.js & npm
+- MySQL
+  ###optional
+- Docker
+- Docker composer
+- Redis
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-repo/eduvista.git
+   cd eduvista
+   ```
+
+2. **Install PHP dependencies:**
+   ```bash
+   composer install
+   ```
+
+3. **Install JavaScript dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Set up environment variables:**
+   - Copy the `.env.example` file to `.env`:
+     ```bash
+     cp .env.example .env
+     ```
+   - Update the `.env` file with your database credentials and other settings.
+
+5. **Generate application key:**
+   ```bash
+   php artisan key:generate
+   ```
+
+6. **Run database migrations:**
+   ```bash
+   php artisan migrate
+   ```
+
+7. **Compile assets:**
+   ```bash
+   npm run dev
+   ```
+
+8. **Start the development server:**
+   ```bash
+   php artisan serve
+   ```
+
+9. **Access the application:**
+   Open your browser and go to `http://localhost:8000`
+### Optional: Using Docker
+
+1. **Install Docker and Docker Compose.**
+2. **Build and start the Docker containers:**
+   ```bash
+   docker-compose up --build
+   ```
+
+3. **Access the application:**
+   Open your browser and go to `http://localhost:8000`
+
+### Why Prerequisites ?
+
+1. **PHP**: Ensure you have PHP >= 7.3 installed. You can install PHP using package managers like `apt` for Ubuntu or `brew` for macOS.
+2. **Composer**: Dependency manager for PHP. You can install Composer globally by following the instructions on [getcomposer.org](https://getcomposer.org/download/).
+3. **Node.js and npm**: Required for managing JavaScript dependencies and compiling assets. You can download and install them from [nodejs.org](https://nodejs.org/).
+
+### Dependencies Installed via Composer
+
+1. **Laravel Framework**: The core PHP framework.
+2. **Laravel Passport**: For API authentication.
+3. **Laravel Echo**: For real-time events (optional, with Pusher integration).
+4. **Laravel Mix**: For compiling assets.
+
+### Dependencies Installed via npm
+
+1. **Vue.js**: Frontend framework for building user interfaces.
+2. **Axios**: HTTP client for making requests to the backend.
+3. **Tailwind CSS**: Utility-first CSS framework.
+4. **PostCSS**: Tool for transforming CSS with JavaScript plugins.
+5. **Lodash**: Utility library for JavaScript.
+
+### Other Tools
+
+- **MySQL**: For database management.
+- **Redis**: For caching (optional).
+- **Docker**: For containerization (optional).
+
+
+
+### Middleware and Blade Templates
+
+- **Blade**: Laravel's templating engine is included by default and does not require separate installation. Blade templates are stored in the `resources/views` directory.
+- **Middleware**: Custom middleware can be created and registered in `app/Http/Middleware`. Laravel's default middleware are already configured in `app/Http/Kernel.php`.
+
+By following these steps and ensuring the prerequisites are met, you will have a fully functional Laravel project setup. If you encounter any issues, refer to the Laravel [documentation](https://laravel.com/docs) for detailed guidance.
