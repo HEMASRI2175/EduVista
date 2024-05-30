@@ -157,9 +157,15 @@ We aim to collaborate with companies and industry professionals to provide stude
 
 ### Why Prerequisites ?
 
-1. **PHP**: Ensure you have PHP >= 7.3 installed. You can install PHP using package managers like `apt` for Ubuntu or `brew` for macOS.
-2. **Composer**: Dependency manager for PHP. You can install Composer globally by following the instructions on [getcomposer.org](https://getcomposer.org/download/).
-3. **Node.js and npm**: Required for managing JavaScript dependencies and compiling assets. You can download and install them from [nodejs.org](https://nodejs.org/).
+1. **PHP**: Ensure that PHP is installed on your system. You can download and install PHP from the [official PHP website](https://www.php.net/downloads).
+
+2. **Composer**: Composer is a dependency manager for PHP. You can install Composer by following the instructions on the [Composer website](https://getcomposer.org/download/).
+
+3. **Node.js and npm**: Node.js and npm are required for managing JavaScript dependencies and compiling assets. You can download and install Node.js from the [official Node.js website](https://nodejs.org/en/download/), which includes npm.
+
+4. **MySQL Database**: Make sure you have MySQL installed on your system. You can download and install MySQL from the [official MySQL website](https://dev.mysql.com/downloads/).
+
+5. **Git**: Git is a version control system used for cloning the EduVista repository. You can install Git by following the instructions on the [Git website](https://git-scm.com/downloads).
 
 ### Dependencies Installed via Composer
 
@@ -189,4 +195,7 @@ We aim to collaborate with companies and industry professionals to provide stude
 - **Blade**: Laravel's templating engine is included by default and does not require separate installation. Blade templates are stored in the `resources/views` directory.
 - **Middleware**: Custom middleware can be created and registered in `app/Http/Middleware`. Laravel's default middleware are already configured in `app/Http/Kernel.php`.
 
-By following these steps and ensuring the prerequisites are met, you will have a fully functional Laravel project setup. If you encounter any issues, refer to the Laravel [documentation](https://laravel.com/docs) for detailed guidance.
+By following these steps and ensuring the prerequisites are met, you will have a fully functional Laravel project setup. If you encounter any issues, refer to the Laravel [documentation](https://laravel.com/docs) for detailed guidance.Certainly! Here's a comprehensive guide including all prerequisites and their installation steps for setting up the EduVista platform:
+
+
+
